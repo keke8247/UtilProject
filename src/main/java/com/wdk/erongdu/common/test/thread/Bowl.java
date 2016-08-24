@@ -14,7 +14,7 @@ class Table{
 	Table(){
 		System.out.println("Table()");
 		bowl2.f1(1);
-	}
+	} 
 	
 	void f2(int marker){
 		System.out.println("f2"+marker);
