@@ -13,6 +13,28 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <repositories>
+	
+		<!--如有Nexus私服, 取消注释并指向正确的服务器地址. -->
+		<repository>
+			<id>aliyun</id>
+			<name>aliyun repository</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+		</repository>
+
+		<repository>
+			<id>Extranet nexus</id>
+			<name>Extranet Repositories</name>
+			<url>http://60.190.230.35:50100/nexus/content/groups/public/</url>
+		</repository>
+
+		<repository>
+			<id>Intranet nexus</id>
+			<name>Intranet Repositories</name>
+			<url>http://172.16.88.109/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
 
   <dependencies>
     <dependency>
@@ -21,5 +43,25 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- httpClient -->
+	<dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpclient</artifactId>
+	    <version>4.5</version>
+	</dependency>
+	
+	<dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpasyncclient</artifactId>
+        <version>4.1.1</version>
+    </dependency>
+    
+    <dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpmime</artifactId>
+	    <version>4.5</version>
+	</dependency>
+    
   </dependencies>
 </project>
